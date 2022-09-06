@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'headingNow';
+    src: url('./font/HeadingNowTrial-53BookItalic.ttf');
+        
+}
+
+*{
+    font-family: "headingNow" ;
+    font-stretch: ultra-expanded;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grandeDiv {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+    width: 30%;
+    height: 250px;
+    margin: 50px;
+    margin-left: 150px;
+    overflow: hidden;
+} 
+
+.image {
+    width: 250px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 1s all ease;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+.divTexte{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+} 
+
+
+.bouton{
+    border-radius: 20px;
+    background-color: lightskyblue;
+    transition: 1s all ease;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    background: linear-gradient(0.25turn, #63c0ed, #4f81e3);
+}
+
+.grandeDiv:nth-child(2n) a {
+    background: linear-gradient(0.25turn, #9cd996, #36d2b0);
+}
+
+.bouton:hover {
+    transform: scale(0.8, 1);}
